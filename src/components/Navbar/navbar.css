@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.hero_name{
+    padding: 1rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav_options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.nav_options p {
+    margin: 1rem;
+    /* font-size: large; */
+    font-weight: bold;
+}
+
+.hero_name, .nav_options p {
+    cursor: pointer;
+} 
