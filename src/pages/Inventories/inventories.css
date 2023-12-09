@@ -1,0 +1,17 @@
+.invent_layout{
+    display: flex;
+    text-align: left;
+}
+
+.invent_name{
+    font-size: x-large;
+    font-weight: bold;
+  
+}
+
+.invent_card{
+    border: 1px solid black;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
+}                  
