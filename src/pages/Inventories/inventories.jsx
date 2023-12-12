@@ -24,7 +24,8 @@ export const Inventories = () => {
               <b> Quantity: </b> {inventory.quantity}
             </p>
             <p>
-              <b> Data: </b> {new Date(inventory?.createdAt).toLocaleString()}
+              <b> Data: </b>{" "}
+              {new Date(inventory?.createdAt).toLocaleDateString("en-GB")}
             </p>
             <p>
               <b> Price: </b> {inventory.price}
