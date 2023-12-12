@@ -4,14 +4,22 @@
 }
 
 .invent_name{
-    font-size: x-large;
+    font-size: 24px;
     font-weight: bold;
-  
+    margin-bottom: 10px; 
+}
+
+b{
+    margin-right: 0.5rem;
 }
 
 .invent_card{
     border: 1px solid black;
     text-align: left;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 2rem;
+    margin: 2rem;
+    font-size: 18px;
+    background-color: rgb(236, 239, 252);
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }                  
