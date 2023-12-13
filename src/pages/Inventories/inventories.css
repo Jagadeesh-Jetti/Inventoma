@@ -1,5 +1,6 @@
 .invent_layout{
     display: flex;
+    flex-wrap: wrap;
     text-align: left;
 }
 
@@ -17,9 +18,22 @@ b{
     border: 1px solid black;
     text-align: left;
     padding: 2rem;
-    margin: 2rem;
+    margin: 1rem;
+    width: 12rem;
     font-size: 18px;
     background-color: rgb(236, 239, 252);
     border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}                  
+    position: relative;
+    box-shadow: 8px 8px 10px rgba(2, 2, 35, 0.1);
+}    
+
+.invent_card:hover{
+    box-shadow: 8px 8px 10px rgb(166, 168, 177);
+}
+
+.icons{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    gap: 30px;
+}
