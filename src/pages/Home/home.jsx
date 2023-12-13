@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetInventories } from "../../actions";
+import { AddEntry, GetInventories } from "../../actions";
 import { useDispatch } from "react-redux";
 import "../Home/home.css";
 
@@ -11,14 +11,22 @@ export const Home = () => {
   }, [dispatch]);
 
   const [input, setInput] = useState({
-    itemName: "",
+    name: "",
     quantity: "",
     price: "",
-    category: "",
+    type: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(input);
+    dispatch(AddEntry(input));
+    setInput({
+      name: "",
+      quantity: "",
+      price: "",
+      type: "",
+    });
   };
 
   const handleInput = (e) => {
@@ -32,9 +40,9 @@ export const Home = () => {
       <form onSubmit={handleSubmit} className="form">
         <div className="form-rows">
           <input
-            name="itemName"
+            name="name"
             type="text"
-            value={input.itemName}
+            value={input.name}
             onChange={handleInput}
             placeholder="Item Name"
           />
@@ -56,10 +64,10 @@ export const Home = () => {
             placeholder="Price"
           />
 
-          <select name="category" value={input.category} onChange={handleInput}>
-            <option value=""> Select category </option>
-            <option value="category1"> Inventory </option>
-            <option value="category2"> Sales </option>
+          <select name="type" value={input.type} onChange={handleInput}>
+            <option> Select category </option>
+            <option value="inventories"> Inventory </option>
+            <option value="sales"> Sales </option>
           </select>
         </div>
 
