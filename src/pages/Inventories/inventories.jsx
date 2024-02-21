@@ -18,11 +18,11 @@ export const Inventories = () => {
   }, [dispatch]);
 
   return (
-    <div className="invent_main">
-      <div className="invent_name">Inventories</div>
-      <div className="invent_layout">
-        {inventories.map((inventory) => (
-          <div className="invent_card">
+    <div className="invent-main">
+      <div className="invent-name">Inventories</div>
+      <div className="invent-layout">
+        {inventories?.map((inventory) => (
+          <div className="invent-card" key={inventory._id}>
             <p>
               <b> Name: </b> {inventory.name}
             </p>
@@ -30,7 +30,7 @@ export const Inventories = () => {
               <b> Quantity: </b> {inventory.quantity}
             </p>
             <p>
-              <b> Data: </b>{" "}
+              <b> Date: </b>
               {new Date(inventory?.createdAt).toLocaleDateString("en-GB")}
             </p>
             <p>
@@ -41,7 +41,7 @@ export const Inventories = () => {
                 icon={faTrash}
                 className="trash"
                 onClick={() => deleteHandler(inventory._id)}
-              />{" "}
+              />
               <FontAwesomeIcon
                 icon={faPenToSquare}
                 // onClick={() => modal(true, _id)}
