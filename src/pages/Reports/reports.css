@@ -1,0 +1,48 @@
+.reports-main {
+    padding: 20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+  .report-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .select {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .table-div {
+    margin-top: 20px;
+  }
+  
+  .loading-text {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .placeholder-text {
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
