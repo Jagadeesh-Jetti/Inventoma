@@ -1,42 +1,52 @@
 .add-data-container {
-    background-color: rgb(17, 56, 78);
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 3rem;
-    color: whitesmoke;
-  }
-  
-  .add-data-container input,
-  select {
-    width: 11rem;
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 5px;
-    /* border: none; */
-    outline: none;
-  }
-  
-  .add-data-container button {
-    display: flex;
-    width: 11rem;
-    padding: 0.5rem;
-    margin: 1rem;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .form-rows {
-    display: flex;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgb(17, 56, 78);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem;
+  color: whitesmoke;
+}
+
+.add-data-container input,
+select {
+  width: 11rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
+
+.add-data-container button {
+  display: flex;
+  width: 11rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-rows {
+  display: flex;
+}
+
+.form-button {
+  width: 12.2rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 5px;
+  outline: none;
+}
