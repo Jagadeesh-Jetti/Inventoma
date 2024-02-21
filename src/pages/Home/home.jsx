@@ -14,17 +14,18 @@ export const Home = () => {
     name: "",
     quantity: "",
     price: "",
+    category: "",
     type: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(input);
     dispatch(AddEntry(input));
     setInput({
       name: "",
       quantity: "",
       price: "",
+      category: "",
       type: "",
     });
   };
@@ -64,14 +65,29 @@ export const Home = () => {
             placeholder="Price"
           />
 
-          <select name="type" value={input.type} onChange={handleInput}>
-            <option> Select category </option>
+          <input
+            name="category"
+            type="text"
+            value={input.category}
+            onChange={handleInput}
+            placeholder="Category"
+          />
+        </div>
+        <div className="form-rows">
+          <select
+            name="type"
+            value={input.type}
+            onChange={handleInput}
+            className="form-button"
+          >
+            <option> Select Type </option>
             <option value="inventories"> Inventory </option>
             <option value="sales"> Sales </option>
           </select>
+          <button type="submit" className="form-button">
+            Add Item
+          </button>
         </div>
-
-        <button type="submit">Add Item to Inventory</button>
       </form>
     </div>
   );
