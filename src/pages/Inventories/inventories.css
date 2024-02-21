@@ -1,39 +1,52 @@
-.invent_layout{
+.invent-layout {
     display: flex;
     flex-wrap: wrap;
-    text-align: left;
-}
-
-.invent_name{
+    justify-content: space-evenly;
+  }
+  
+  .invent-main {
+    padding: 20px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  
+  .invent-name {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 10px; 
-}
-
-b{
+    margin-bottom: 20px;
+  }
+  
+  b {
     margin-right: 0.5rem;
-}
-
-.invent_card{
-    border: 1px solid black;
+  }
+  
+  .invent-card {
+    border: 1px solid #ddd;
     text-align: left;
-    padding: 2rem;
+    padding: 1.5rem;
     margin: 1rem;
-    width: 12rem;
-    font-size: 18px;
-    background-color: rgb(236, 239, 252);
-    border: none;
+    width: 14rem;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
     position: relative;
-    box-shadow: 8px 8px 10px rgba(2, 2, 35, 0.1);
-}    
-
-.invent_card:hover{
-    box-shadow: 8px 8px 10px rgb(166, 168, 177);
-}
-
-.icons{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .invent-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icons {
     position: absolute;
-    top: 30px;
-    right: 10px;
-    gap: 30px;
-}
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .trash {
+    color: #ff4646;
+  }
+  
